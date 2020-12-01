@@ -1,8 +1,75 @@
-@media screen and (max-width: 800px) {
-    #pagewrap {
+@media screen and (max-width: 812px) {
+    {
         display: grid;
-        grid-template-columns:
-        grid-template-rows: 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
         grid-template-areas:
-            
+            "head head"
+            "img img"
+            "foot foot"
+
     }
+    #head {
+        grid-area: head;
+        text-align: center;
+        color: white;
+        background-color: darkblue;
+    }
+
+    #billeder {
+        grid-area: img;
+        display: grid;
+        max-width: 812px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "bjorn ikon"
+            "creative Illu"
+            ". .";
+        margin: 2vw;
+        object-fit: contain;
+    }
+
+
+    .billede {
+        border-style: solid;
+        border-color: black;
+        transition: transform .3s ease;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #bjorn {
+        grid-area: bjorn;
+        border-bottom-style: hidden;
+    }
+
+
+    #ikon {
+        grid: ikon;
+        border-bottom-style: hidden;
+    }
+
+    #creative {
+        grid: creative;
+        border-bottom-style: hidden;
+    }
+
+    #illu {
+        grid: illu;
+        border-bottom-style: hidden;
+    }
+
+    .billede:hover {
+        transform: scale(1.1);
+        border-style: solid;
+        border-bottom-color: black;
+    }
+
+    footer {
+        grid-area: foot;
+        text-align: center;
+        background-color: darkblue;
+        color: white;
+    }
+        

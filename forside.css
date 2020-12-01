@@ -1,106 +1,118 @@
-@media screen and (max-width: 8012px) {
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 6fr 1fr;
-        grid-template-areas:
-            "head head"
-            "img img"
-            "foot foot"
 
-    }
-    #head {
-        width: 100%;
-        height: 100%;
-        grid-area: head;
-        text-align: left;
-        background-color: white;
-    }
+#head {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    grid-area: head;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
 
-    body {
-        background-image: url(../Billeder/baggrundsbilledetest.webp);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
+body {
+    background-image: url(../Billeder/baggrundsbilledetest.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
-    h1 {
-        font-family: "Open Sans";
-        font-size: 3vh;
-        letter-spacing: 0.2em;
-        margin-left: 2vw;
-    }
+h1 {
+    font-family: "Open Sans";
+    font-size: 3vh;
+    letter-spacing: 0.2em;
+    margin-left: 2vw;
+    display: inline-block;
+    text-decoration: none;
+}
 
-    #hoverbilleder {
-        grid-area: img;
-        display: grid;
-        max-width: 812px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "bjorn ikon"
-            "creative Illu"
-            "sffb ovel";
-        margin: 2vw;
-        object-position: center;
-        opacity: 85%;
-    }
+#headlink:visited {
+    color: black;
+}
+
+#hoverbilleder {
+    grid-area: img;
+    display: grid;
+    max-width: 812px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "bjorn ikon"
+        "creative Illu"
+        "sffb ovel";
+    margin: 2vw;
+    object-position: center;
+    opacity: 90%;
+}
 
 
-    .billede {
-        border-style: solid;
-        border-color: black;
-        border-width: 0.4vw;
-        transition: transform .3s ease;
-        max-height: 95%;
-        max-width: 95%;
-    }
+.billede {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.4vw;
+    transition: transform .3s ease;
+    max-height: 95%;
+    max-width: 95%;
+}
 
-    #bjorn {
-        grid-area: bjorn;
-    }
+#bjorn {
+    grid-area: bjorn;
+}
 
 
-    #ikon {
-        grid: ikon;
-    }
+#ikon {
+    grid: ikon;
+}
 
-    #creative {
-        grid: creative;
-    }
+#creative {
+    grid: creative;
+}
 
-    #illu {
-        grid: illu;
-    }
+#illu {
+    grid: illu;
+}
 
-    #sffb {
-        grid: sffb;
-    }
+#sffb {
+    grid: sffb;
+}
 
-    #ovelse {
-        grid: ovel;
-    }
+#ovelse {
+    grid: ovel;
+}
 
-    .billede:hover {
-        transform: scale(1.1);
-        border-style: solid;
-        border-bottom-color: black;
-    }
+.billede:hover {
+    transform: scale(1.1);
+    border-style: solid;
+    border-bottom-color: black;
+}
 
-    #bjorn:hover {
-        border-bottom-style: solid;
-        border-bottom-color: black;
-    }
+#bjorn:hover {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
 
-    #ikon:hover {
-        border-bottom-style: solid;
-        border-bottom-color: black;
-    }
+#ikon:hover {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
 
-    footer {
-        grid-area: foot;
-        text-align: center;
-        background-color: darkblue;
-        color: white;
-    }
-        
+footer {
+    grid-area: foot;
+    font-family: "Open Sans";
+    text-align: left;
+    background-color: white;
+}
+
+footer p {
+    margin-left: 2vw;
+}
+
+@media screen and (max-width: 812px) {
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas:
+        "head head"
+        "img img"
+        "foot foot"
+}

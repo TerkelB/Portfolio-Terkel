@@ -1,34 +1,36 @@
-
-body {
+#pagewrap {
     background-color: #f8f8f8;
 }
 
 header {
     width: 100%;
-    height: 120px;
     grid-area: head;
     font-family: "Open Sans";
     text-align: left;
     background-color: #fff;
     color: black;
     margin-top: -2.1vw;
-    margin-left: -2vw;
     padding-right: 5vw;
     box-shadow: 5px 5px 8px lightgrey;
     position: absolute;
 }
 
 header p {
-    font-family: "Open Sans";
-    font-size: 2em;
+    font-size: 1.7em;
+    color: black;
     letter-spacing: 0.2em;
-    margin-left: 3vw;
+    margin-left: 2vw;
     margin-top: 3vw;
     display: inline-block;
     text-decoration: none;
 }
 
-header a:default {
+
+header li {
+    margin-top: 2.3em;
+}
+
+header a:hover {
     color: black;
 }
 
@@ -45,7 +47,6 @@ footer {
     width: 100%;
     height: 50px;
     grid-area: foot;
-    font-family: "Open Sans";
     text-align: center;
     font-size: 0.7em;
     position: relative;
@@ -60,19 +61,28 @@ footer p {
     margin-top: -1em;
 }
 
-@media screen and (min-width: 0px) {
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "head head head head"
-        "ind ind ind ind"
-        "foot foot foot foot";
+h1{
+    color: black;
+    grid-area: h1;
+    font-size: 3em;
+    margin: 50em 3vw 0 1.8em;
 }
-    
+
+h2{
+    grid-area: h2; 
+    font-size: 3em;
+    margin-left: 2.2em;
+}
+
+.indholdp {
+    font-size: 1.5em;
+    margin: -4em 3em 0em 3em;
+}
+
+    /* Her er griddet for siden */
+    /* På denne side opførte griddet sig lidt underligt. Jeg kunne ikke finde ud af hvorfor, men jeg fik det løst nogenlunde. */
     #indhold {
-        min-width: 600px;
+        min-width: 510px;
         max-width: 1100px;
         margin: auto;
         grid-area: ind;
@@ -82,50 +92,45 @@ footer p {
         box-shadow: 5px 5px 8px lightgrey;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.7fr 1.5fr 2.3fr 0.7fr 2fr 1fr 1fr 1fr 1fr 1fr 0.3fr 2fr 2fr 1.5fr 2.5fr 1.5fr 1fr 2.5fr 1fr 1fr;
+        grid-template-rows: 
+            0.2fr 0.4fr 0.5fr 0.45fr 0.75fr
+            0.15fr 0.1fr 0.1fr 0.1fr 0.3fr 
+            0.2fr 0.1fr 0.3fr 0.5fr 0.2fr 
+            0.5fr 0.5fr 0.2fr 0.2fr 0.3fr 
+            0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 
+            0.5fr 0.3fr;
         grid-template-areas: 
+            "head head head head"  
             "h1 . . logo"
             "css1 css1 css1 css1"
             "css2 css2 b1 b1"
-            "css3 css3 b2 b2"
-            "css4 css4 css4 css4"
+            "css3 css3 b2 b2"       /* 5 */
+            "css4 css4 css4 css4"  
             ". b3 b3 ."
-            "css5 css5 css5 css5"
+            "css5 css5 css5 css5" 
             ". b4 b4 ."
-            "css6 css6 css6 css6"
-            ". b5 b5 ."
+            "css6 css6 css6 css6"   /* 10 */
+            ". b5 b5 ."           
             "css7 css7 css7 css7"
             ". b6 b6 ."
             "css8 css8 css8 css8"
-            ". b7 b7 ."
-            "css9 css9 css9 css9"
+            ". b7 b7 ."             /* 15 */
+            "css9 css9 css9 css9" 
             ". b8 b8 ."
             "css10 css10 css10 css10"
             "h2 h2 h2 h2"
-            "res1 res1 res1 res1"
-            ". b9 b9 ."
+            "res1 res1 res1 res1"   /* 20 */
+            ". b9 b9 ."           
             "res2 res2 res2 res2"
+            ". b10 b10 ."
+            "res3 res3 res3 res3"
+            ". b11 b11 ."           /* 25 */
+            "res4 res4 res4 res4" 
             "fod fod fod fod"
             ;
     }
-    
-    h1{
-        grid-area: h1;
-        font-size: 3em;
-        margin: 10vh 3vw 0 3.6vw;
-    }
-    
-    h2{
-        grid-area: h2; 
-        font-size: 3em;
-        margin: 10vh 3vw 0 3.6vw;
-    }
-    
-    .indholdp {
-        font-size: 1.5em;
-        margin: 0 3em 3em; 3em;
-    }
-    
+    /* Herfra er alle tekst-elementer */
+
     #fodnoter {
         grid-area: fod;
         margin: 0 3em 0 3em;
@@ -134,7 +139,6 @@ footer p {
     
     #css1 {
         grid-area: css1;
-        margin-bottom: 2em;
     }
     
     #css2 {
@@ -146,7 +150,6 @@ footer p {
     }
     
     #css4 {
-        margin-top: 2em;
         grid-area: css4;
     }
     
@@ -175,6 +178,7 @@ footer p {
     }
     
     #res1 {
+        margin-top: 0.1em;
         grid-area: res1;
     }
     
@@ -182,12 +186,21 @@ footer p {
         grid-area: res2;
     }
     
+    #res3 {
+        grid-area: res3;
+    }
+    
+    #res4 {
+        grid-area: res4;
+        margin-bottom: 3em;
+    }
+    /* Her slutter tekst-elementerne, og her starter alle billede-elementerne */
     #logo {
+        text-align: center;
         max-height: 50%;
         grid-area: logo;
-        margin: 5vh 3vw 0 3vw;
+        margin-right: 8em;
     }
-
     
     #billede1 {
         grid-area: b1;
@@ -200,45 +213,59 @@ footer p {
     
     #billede3 {
         text-align: center;
+        margin-bottom: 7em;
         grid-area: b3;
     }
 
     #billede4 {
-        margin-top: -8em;
+        margin: -5em 0 8em 0;
         text-align: center;
         grid-area: b4;
-        width: 100%;
     }
     
     #billede5 {
+        margin: -8em 0 6em;
         text-align: center;
         grid-area: b5;
     }
     
     #billede6 {
+        margin: -5em 0 7em;
         text-align: center;
         grid-area: b6;
-        margin-top: -12em;
-        margin-bottom: 2em;
     }
     
     #billede7 {
+        margin-top: 3em;
+        margin-bottom: 6em;
         text-align: center;
         grid-area: b7;
-        margin-top: -5em;
     }
     
     #billede8 {
+        margin: -9em 0 8em;
         text-align: center;
         grid-area: b8;
     }
     
     #billede9 {
-        margin-top: 6em;
+        margin: 4em 0 6em 0;
         text-align: center;
         grid-area: b9;
     }
     
+    #billede10 {
+        margin: 5em 0 7em 0;
+        text-align: center;
+        grid-area: b10;
+    }
+    
+    #billede11 {
+        margin: -4em 0 8em 0;
+        text-align: center;
+        grid-area: b11;
+    }
+    /* Her slutter billede-elementerne */
     .bil:hover {
         transition: transform .4s ease;
         transform: scale(1.4);
@@ -249,7 +276,7 @@ footer p {
         margin-top: -1em;
         text-align: center;
     }
-    
+    /* Dekorationen af en "pseudo"-url, så det ligner en rigtig URL */
     #psurl {
         text-decoration: underline;
         color: blue;

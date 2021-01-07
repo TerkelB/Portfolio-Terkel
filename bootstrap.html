@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bootstrap</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="pagewrap"> <!-- Jeg laver altid en pagewrap, lige meget om jeg kommer til at bruge den eller ej. -->
+      <header> <!-- Her starter headeren, som også indeholder min navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <a class="navbar-brand" href="index.html"><p>TERKEL BLEGAGER</p></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Kodning</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="html.html">HTML</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="css.html">CSS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Design</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Photography</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">View Our Portfolio</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Kommunikation</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Photography</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">View Our Portfolio</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+      <section id="indhold"><!-- Alt det indhold der er midt på siden, såsom tekst, billeder og fodnoter -->
+          <!-- Herunder starter alle tekst-elementerne på siden. Alle paragraphs har den samme class, da de deler lidt styling i CSS. -->
+          <h1>Bootstrap</h1>
+          <p id="bs1" class="indholdp">Bootstrap er et gratis, open-source framework, der tillader HTML og CSS-baserede design for funktioner og elementer som knapper, menuer, billede-karuseller og meget mere. Bootstrap gør det også muligt at lave Responsive Design, samt lave websider med et form for <a href="css.html" target="_blank">grid.</a> (W3schools, 2021.)
+              <br>
+          Bootstrap arbejder med et grid på 12 kolonner, modsat et CSS-grid, hvor man selv kan bestemme hvor mange kolonner man vil arbejde med. Derfor kan man også argumentere for, at man kan lave mere komplekse og unikke designs med CSS-grids. (Østergaard, 2021, s. 19.) Bootstrap er designet til at arbejde udfra mobile-first princippet. (W3schools, 2021.)
+              <br>
+              <br>
+          Hvis man vil bruge elementer fra Bootstrap, skal man enten downloade og hoste elementerne selv, eller man kan inkludere det fra et "Content Delivery Network", eller CDN. (W3schools, 2021.) Menuen i denne portfolio er et bootstrap-element, som jeg har inkluderet fra det der hedder MaxCDN.   
+          </p>
+          <!-- Her slutter tekstelementerne -->
+          <!-- Her er sectionen til fodnoter, som jeg laver som en organiseret liste. -->
+          <section id="fodnoter"> 
+            <ol>
+            <li><p>W3schools. <em>Bootstrap 4 Get Started. </em> <a href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp</a>. Hentet 5/1-21.</p></li>
+            <li><p>Østergaard, Niels. <em>Bootstrapintro.</em> Hentet på <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">https://eadania.mrooms.net/course/view.php?id=2649#section-19</a>. Hentet 5/1-21. </p></li>
+            </ol>
+          </section> 
+          <!-- Fodnoter slut -->
+          <!-- Her starter billederne på siden.-->
+          <section id="logo">
+            <img src="Billeder/bs/bootstrap.webp" alt="Bootstraps logo." width="50%">
+          </section>
+      </section>
+    </div>
+  </body>

@@ -1,0 +1,120 @@
+#pagewrap {
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 100%;
+    grid-area: head;
+    font-family: "Open Sans";
+    text-align: left;
+    background-color: #fff;
+    color: black;
+    margin-top: -2.1vw;
+    padding-right: 5vw;
+    box-shadow: 5px 5px 8px lightgrey;
+    position: absolute;
+}
+
+header p {
+    font-size: 1.7em;
+    color: black;
+    letter-spacing: 0.2em;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+header li {
+    margin-top: 2.3em;
+}
+
+header a:hover {
+    color: black;
+}
+
+header a:visited {
+    color: black;
+}
+
+header p:hover {
+    transition: transform .4s ease;
+    transform: scale(1.03);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    grid-area: foot;
+    text-align: center;
+    font-size: 0.7em;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin-right: 2vw;
+}
+
+#fp2 {
+    margin-top: -1em;
+}
+
+h1{
+    color: black;
+    grid-area: h1;
+    font-size: 3em;
+    margin: 0 3vw -3em 1.8em;
+}
+
+h2{
+    grid-area: h2; 
+    font-size: 3em;
+    margin: 10vh 0 0 1.5em;
+}
+
+.indholdp {
+    font-size: 1.5em;
+    margin: -4em 3em 0em 3em;
+}
+
+
+    /* Her er griddet for siden */
+    #indhold {
+        min-width: 510px;
+        max-width: 1100px;
+        margin: auto;
+        grid-area: ind;
+        font-family: "Amiri";
+        padding-top: 3em;
+        background-color: white;
+        box-shadow: 5px 5px 8px lightgrey;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 
+            0.8fr 1.5fr 2fr 2fr;
+        grid-template-areas: 
+            "head head head head"
+            "h1 . . logo"
+            "bs1 bs1 bs1 bs1"
+            "fod fod fod fod"
+            ;
+    }
+
+    /* Herfra er alle tekst-elementer */
+
+    #fodnoter {
+        grid-area: fod;
+        margin: 10em 3em 0 3em;
+        position: relative;
+    }
+   
+    #logo {
+        text-align: center;
+        grid-area: logo;
+    }
+    
+    #bs1 {
+        grid-area: bs1;
+    }

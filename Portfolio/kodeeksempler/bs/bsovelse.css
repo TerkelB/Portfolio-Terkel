@@ -1,0 +1,14 @@
+#p1 {
+    margin: 0 35em;
+    position: absolute;
+    top: 100;
+    background-color: beige;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px
+}
+
+.p:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.01);
+}

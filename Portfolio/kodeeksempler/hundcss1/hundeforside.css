@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+
+}
+
+@media screen and (min-width: 500px){
+    #pagewrap {
+        grid-area: a;
+        display: grid;
+        grid-template-columns: 2fr 1fr 3fr 2fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        grid-template-areas:
+            ". b a c c ."
+            ". b d e e  ."
+            ". b d e e ."
+            ". f f f f ."
+            ;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #pagewrap {
+        display: grid
+    }
+}
+
+#hdr {
+    grid-area: a;
+    background-color: mediumaquamarine;
+    color: white;
+    text-align: left;
+    font-size: 150%;
+    padding: 1.5%;
+}
+
+#mnu {
+    grid-area: b;
+    background-color: mediumaquamarine;
+    color: white;
+    text-align: center;
+    padding: 1.5%;
+}
+
+#ttl {
+    grid-area: c;
+    background-color: mediumaquamarine;
+    color: white;
+    text-align: left;
+    padding: 1.5%;
+    max-height: 120px;
+}
+
+#txt {
+    grid-area: d;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 1.5%;
+    max-height: 100px;
+}
+
+#img {
+    grid-area: e;
+    max-height: 100%
+}
+
+#ftr {
+    grid-area: f;
+    background-color: mediumaquamarine;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 1.5%;
+    max-height: 70px;
+    position: ;
+    bottom: 0;
+}

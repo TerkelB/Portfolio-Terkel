@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Usability Testmetoder</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="usability.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="pagewrap"> <!-- Jeg laver altid en pagewrap, lige meget om jeg kommer til at bruge den eller ej. -->
+      <header> <!-- Her starter headeren, som også indeholder min navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <a class="navbar-brand" href="index.html"><p>TERKEL BLEGAGER</p></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Webudvikling</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="html.html">HTML</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="css.html">CSS, Grids og Responsive Design</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Design</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="ps.html">Photoshop</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="il.html">Illustrator</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="vid.html">Videoproduktion</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="typo.html">Typografi</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="farver.html">Farver</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="gestalt.html">Gestaltlovene</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Kommunikation</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="gk.html">Grundlæggende Kommunikation og Paradigmer</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ia.html">Informations Arkitektur</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="tp.html">Tekstproduktion</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="usability.html">Usability Testmetoder</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="bmc.html">Business Model Canvas</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Projekter</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="workshop.html">HTML og CSS Workshop</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="dtp.html">Design Thinking Projekt</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="onepage.html">Onepage</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Om mit Portfolio</a>
+                  </li>
+                </ul>
+              </div>
+        </nav> <!-- Navbar slut -->
+    </header>
+      <section id="indhold"><!-- Alt det indhold der er midt på siden, såsom tekst, billeder og fodnoter -->
+          <!-- Herunder starter alle tekst-elementerne på siden. Alle paragraphs har den samme class, da de deler lidt styling i CSS. -->
+          <h1>Usability</h1>
+          <p id="us1" class="indholdp">Når man snakker om usability, snakker man om brugerens evne til at benytte et produkt, som det er ment. Det er nemlig ikke brugerens skyld, hvis de ikke kan finde ud af at bruge produktet, den er producentens. (Gregersen og Wisler-Poulsen, 2015. s. 8.) Usability er vigtigt at have med som multimediedesigner, da vores funktion i høj grad er centreret om brugerens, og dens oplevelser. Usability handler altså om, at gøre digitale produkter så brugbare som muligt. (Gregersen og Wisler-Poulsen, 2015. s. 14.) 
+              <br>
+              <br>
+          Man kan som udgangspunkt opdele brugerens oplevelser med en webside i tre kategorier: (Gregersen og Wisler-Poulsen, 2015. s. 15.)
+              <br>
+              <br>
+          <span>Funktionalitet</span> handler om, at brugeren har nogle særlige mål eller behov, når de lander på en webside. Hvis ikke brugeren kan få opfyldt disse, vil de søge andre steder hen. (Ibid.)
+              <br>
+              <br>
+          <span>Effektivitet</span> handler om, at brugere gerne vil kunne gennemføre handlinger nemt og hurtigt. Hvis ikke de kan det, vil de søge mod andre steder, hvor de kan dette. 
+              <br>
+              <br>
+          <span>Tilfredshed</span> handler om, hvordan brugerens generelle oplevelse af hjemmesiden er. Ikke bare hvordan websiden bruges, men også hvordan den føles at bruge. God brugervenlig og godt design giver brugeren en god oplevelse, hvilket er afgørende for sidens succes. (Ibid.)
+          </p>
+          <h2 id="h21">Testmetoderne</h2>
+          <p id="us2" class="indholdp">Men hvordan tester man så en websides usability, og hvilke redskaber er der til rådighed? 
+              <br>
+              <br>
+          Ofte er det jo ikke skaberen af websitet, som ender med at være brugeren. Derfor er det vigtigt at test websitet, med brugeren i centrum.
+              <br>
+              <br>
+          Man kan f.eks. lave en <span>Gangstertest</span>. Gangstertesten får sit navn af, at man skal forestille sig at være lukket i bagagerummet på en bil, der kører til et ukendt sted. På et tidspunkt bliver man lukket ud, og herfra skal man så orientere sig om, hvor man befinder sig. (Gregersen og Wisler-Poulsen, 2015. s. 43.)
+              <br>
+          Dette kan overføres til et website ved, at få brugeren til at starte på en tilfældig underside, og så lade dem orientere sig om, hvor på websiden de befinder sig. Herfra kan man så finde ud af, hvor god navigationen er på websiden. (Ibid.)
+          </p>
+          <!-- Her slutter tekstelementerne -->
+          <!-- Her er sectionen til fodnoter, som jeg laver som en organiseret liste. -->
+          <section id="fodnoter"> 
+            <ol>
+                <li><p>Gregersen, Ole og Wisler-Poulsen, Ian, <em>Usability</em>. 2015.</p></li>
+            </ol>
+          </section> 
+          <!-- Fodnoter slut -->
+          <!-- Her starter billederne på siden.-->
+        
+          <!-- Billeder slut -->
+      </section>
+        <footer><p>&copy; Terkel Blegager 2021</p>&nbsp;<p id="fp2">Erhvervsakademi Dania - MMD 2020</p></footer>
+    </div> <!--Pagewrap slut-->
+  </body>

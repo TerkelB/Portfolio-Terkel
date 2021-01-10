@@ -1,0 +1,207 @@
+#pagewrap {
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 100%;
+    grid-area: head;
+    font-family: "Open Sans";
+    text-align: left;
+    background-color: #fff;
+    color: black;
+    margin-top: -2.1vw;
+    padding-right: 5vw;
+    box-shadow: 5px 5px 8px lightgrey;
+    position: absolute;
+}
+
+header p {
+    font-size: 1.7em;
+    color: black;
+    letter-spacing: 0.2em;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+header li {
+    margin-top: 2.3em;
+}
+
+header a:hover {
+    color: black;
+}
+
+header a:visited {
+    color: black;
+}
+
+header p:hover {
+    transition: transform .4s ease;
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: 1em;
+    width: 100%;
+    grid-area: foot;
+    text-align: center;
+    font-family: "Amiri";
+}
+
+footer p {
+    margin-right: 2vw;
+}
+
+#fp2 {
+    margin-top: -1em;
+}
+
+h1{
+    color: black;
+    grid-area: h1;
+    font-size: 3em;
+    margin-left: 1.8em;
+}
+
+h2{
+    font-size: 3em;
+    margin: 10em 0 0 2.2em;
+}
+
+.indholdp {
+    font-size: 1.5em;
+    margin: -4em 3em 0em 3em;
+}
+
+
+/* Her er griddet for siden */
+#indhold {
+    min-width: 510px;
+    max-width: 1100px;
+    margin: auto;
+    grid-area: ind;
+    font-family: "Amiri";
+    padding-top: 3em;
+    background-color: white;
+    box-shadow: 5px 5px 8px lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 
+        0.3fr 0.4fr 0.4fr 0.4fr 0.3fr
+        0.6fr 0.4fr 0.2fr 1fr 0.4fr
+        0.3fr 0.7fr 0.4fr 0.3fr 1.7fr
+        0.4fr 0.3fr 1.1fr 0.4fr 0.1fr
+        0.4fr 0.1fr
+        ;
+    grid-template-areas: 
+        "head head head head"
+        "h1 h1 h1 h1"
+        "g1 g1 g1 g1"
+        "h2 h2 h2 h2"
+        "g2 g2 g2 g2"       /* 5 */
+        ". b1 b1 ."
+        "h22 h22 h22 h22"
+        "g3 g3 g3 g3"
+        ". b2 b2 ."
+        "h23 h23 h23 h23"   /* 10 */
+        "g4 g4 g4 g4"
+        ". b3 b3 ."
+        "h24 h24 h24 h24"
+        "g5 g5 g5 g5"
+        ". b4 b4 ."         /* 15 */
+        "h25 h25 h25 h25"
+        "g6 g6 g6 g6"
+        ". b5 b5 ."
+        "h26 h26 h26 h26"
+        "g7 g7 g7 g7"       /* 20 */
+        "fod fod fod fod"
+        "foot foot foot foot"
+        ;
+}
+
+/* Herfra er alle tekst-elementer */
+
+#fodnoter {
+    grid-area: fod;
+    margin: 6em 3em -8em 3em;
+}
+
+#h21 {
+    grid-area: h2;
+}
+
+#h22 {
+    grid-area: h22;
+}
+
+#h23 {
+    grid-area: h23;
+}
+
+#h24 {
+    grid-area: h24;
+}
+
+#h25 {
+    grid-area: h25;
+}
+
+#h26 {
+    grid-area: h26;
+}
+
+#ge1 {
+    grid-area: g1;
+}
+
+#ge2 {
+    grid-area: g2;
+}
+
+#ge3 {
+    grid-area: g3;
+}
+
+#ge4 {
+    grid-area: g4;
+}
+
+#ge5 {
+    grid-area: g5;
+}
+
+#ge6 {
+    grid-area: g6;
+}
+
+#ge7 {
+    grid-area: g7;
+}
+
+
+/* Her slutter tekst-elementerne */
+/* Her starter billede-elementerne */
+
+#billede1 {
+    grid-area: b1;
+}
+
+#billede2 {
+    grid-area: b2;
+}
+
+#billede3 {
+    grid-area: b3;
+}
+
+#billede4 {
+    grid-area: b4;
+}
+
+#billede5 {
+    grid-area: b5;
+}
+

@@ -1,0 +1,225 @@
+#pagewrap {
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 100%;
+    grid-area: head;
+    font-family: "Open Sans";
+    text-align: left;
+    background-color: #fff;
+    color: black;
+    margin-top: -2.1vw;
+    padding-right: 5vw;
+    box-shadow: 5px 5px 8px lightgrey;
+    position: absolute;
+}
+
+header p {
+    font-size: 1.7em;
+    color: black;
+    letter-spacing: 0.2em;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+header li {
+    margin-top: 2.3em;
+}
+
+header a:hover {
+    color: black;
+}
+
+header a:visited {
+    color: black;
+}
+
+header p:hover {
+    transition: transform .4s ease;
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: 1em;
+    width: 100%;
+    grid-area: foot;
+    text-align: center;
+    font-family: "Amiri";
+}
+
+footer p {
+    margin-right: 2vw;
+}
+
+#fp2 {
+    margin-top: -1em;
+}
+
+h1{
+    color: black;
+    grid-area: h1;
+    font-size: 3em;
+    margin-left: 1.8em;
+}
+
+h2{ 
+    font-size: 3em;
+    margin: 0 0 0 2.2em;
+}
+
+.indholdp {
+    font-size: 1.5em;
+    margin: -4em 3em 0em 3em;
+}
+
+
+/* Her er griddet for siden */
+#indhold {
+    min-width: 510px;
+    max-width: 1100px;
+    margin: auto;
+    grid-area: ind;
+    font-family: "Amiri";
+    padding-top: 3em;
+    background-color: white;
+    box-shadow: 5px 5px 8px lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 
+        0.2fr 0.3fr 0.4fr 0.2fr 0.23fr 
+        0.1fr 0.65fr 0.2fr 0.23fr 0.1fr
+        0.23fr 0.1fr 0.1fr 0.23fr 0.2fr
+        0.65fr 0.3fr 0.23fr 0.35fr 0.5fr
+        1fr 0.2fr 0.25fr 0.1fr
+        ;
+    grid-template-areas: 
+        "head head head head"
+        "h1 h1 h1 h1"
+        "p1 p1 p1 p1"
+        ". b1 b1 ."
+        "h2 h2 h2 h2"            /* 5 */
+        "p2 p2 p2 p2"
+        ". b2 b2 ."
+        "p3 p3 p3 p3"
+        "h22 h22 h22 h22"
+        "p4 p4 p4 p4"            /* 10 */
+        "h23 h23 h23 h23"       
+        "p5 p5 p5 p5"
+        ". b3 b3 ."
+        "h24 h24 h24 h24"
+        "p6 p6 p6 p6"            /* 15 */
+        ". b4 b4 ."       
+        "p7 p7 p7 p7"
+        "h25 h25 h25 h25"
+        "p8 p8 p8 p8"
+        ". b5 b5 ."             /* 20 */
+        "p9 p9 p9 p9"
+        "h26 h26 h26 h26"
+        "p10 p10 p10 p10"
+        "foot foot foot foot"
+        ;
+}
+
+#h21 {
+    grid-area: h2;
+}
+
+#h22 {
+    grid-area: h22;
+}
+
+#h23 {
+    grid-area: h23;
+}
+
+#h24 {
+    grid-area: h24;
+}
+
+#h25 {
+    grid-area: h25;
+}
+
+#h26 {
+    grid-area: h26;
+}
+
+#pro1 {
+    grid-area: p1;
+}
+
+#pro2 {
+    grid-area: p2;
+}
+
+#pro3 {
+    grid-area: p3;
+}
+
+#pro4 {
+    grid-area: p4;
+}
+
+#pro5 {
+    grid-area: p5;
+}
+
+#pro6 {
+    grid-area: p6;
+}
+
+#pro7 {
+    grid-area: p7;
+}
+
+#pro8 {
+    grid-area: p8;
+}
+
+#pro9 {
+    grid-area: p9;
+    margin-bottom: 4em;
+}
+
+#pro10 {
+    grid-area: p10;
+}
+
+/* Her slutter tekst-elementerne */
+/* Her starter billede-elementerne */
+
+#billede1 {
+    grid-area: b1;
+    text-align: center;
+}
+
+#billede2 {
+    grid-area: b2;
+    text-align: center;
+}
+
+#billede3 {
+    grid-area: b3;
+    text-align: center;
+}
+
+#billede4 {
+    grid-area: b4;
+    text-align: center;
+}
+
+#billede5 {
+    grid-area: b5;
+    text-align: center;
+}
+
+/* Her slutter billede-elementerne */
+.bil:hover {
+    transition: transform .2s ease;
+    transform: scale(1.4);
+    box-shadow: 10px 20px 20px darkgrey;
+}

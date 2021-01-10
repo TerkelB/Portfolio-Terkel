@@ -91,53 +91,27 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 
-        0.4fr 1.2fr 1.7fr 0.1fr 1fr 
-        0.5fr 0.1fr 0.1fr 0.4fr;
+        0.3fr 0.4fr 1fr 0.5fr 0.2fr
+        ;
     grid-template-areas: 
         "head head head head"
         "h1 h1 h1 h1"
-        "bs1 bs1 bs1 bs1"
+        "tp1 tp1 tp1 tp1"
         ". b1 b1 ."
-        "bs2 bs2 bs2 bs2"       /*5*/
-        "h2 h2 h2 h2"
-        "rf1 rf1 rf1 rf1"
-        "fod fod fod fod"       
         "foot foot foot foot"
         ;
 }
 
 /* Herfra er alle tekst-elementer */
 
-#fodnoter {
-    grid-area: fod;
-    margin: 6em 3em -8em 3em;
+#tp1 {
+    grid-area: tp1;
 }
 
-#bs1 {
-    grid-area: bs1;
-    margin-top: -17em;
-}
-
-#bs2 {
-    grid-area: bs2;
-    margin-bottom: 3em;
-}
-
-
-#ref1 {
-    grid-area: rf1;
-}
 /* Her slutter tekst-elementerne */
 /* Her starter billede-elementerne */
 
 #billede1 {
-    margin-top: -24em;
     text-align: center;
     grid-area: b1;
 }
-
-/* Her slutter billede-elementerne */
-.bil:hover {
-    transition: transform .4s ease;
-    transform: scale(1.6);
-    box-shadow: 10px 20px 20px darkgrey;

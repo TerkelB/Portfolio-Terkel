@@ -66,10 +66,9 @@ h1{
     margin-left: 1.8em;
 }
 
-h2{
-    grid-area: h2; 
+h2{ 
     font-size: 3em;
-    margin: 10em 0 0 2.2em;
+    margin: 0 0 0 2.2em;
 }
 
 .indholdp {
@@ -91,53 +90,136 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 
-        0.4fr 1.2fr 1.7fr 0.1fr 1fr 
-        0.5fr 0.1fr 0.1fr 0.4fr;
+        0.2fr 0.3fr 0.4fr 0.2fr 0.23fr 
+        0.1fr 0.65fr 0.2fr 0.23fr 0.1fr
+        0.23fr 0.1fr 0.1fr 0.23fr 0.2fr
+        0.65fr 0.3fr 0.23fr 0.35fr 0.5fr
+        1fr 0.2fr 0.25fr 0.1fr
+        ;
     grid-template-areas: 
         "head head head head"
         "h1 h1 h1 h1"
-        "bs1 bs1 bs1 bs1"
+        "p1 p1 p1 p1"
         ". b1 b1 ."
-        "bs2 bs2 bs2 bs2"       /*5*/
-        "h2 h2 h2 h2"
-        "rf1 rf1 rf1 rf1"
-        "fod fod fod fod"       
+        "h2 h2 h2 h2"            /* 5 */
+        "p2 p2 p2 p2"
+        ". b2 b2 ."
+        "p3 p3 p3 p3"
+        "h22 h22 h22 h22"
+        "p4 p4 p4 p4"            /* 10 */
+        "h23 h23 h23 h23"       
+        "p5 p5 p5 p5"
+        ". b3 b3 ."
+        "h24 h24 h24 h24"
+        "p6 p6 p6 p6"            /* 15 */
+        ". b4 b4 ."       
+        "p7 p7 p7 p7"
+        "h25 h25 h25 h25"
+        "p8 p8 p8 p8"
+        ". b5 b5 ."             /* 20 */
+        "p9 p9 p9 p9"
+        "h26 h26 h26 h26"
+        "p10 p10 p10 p10"
         "foot foot foot foot"
         ;
 }
 
-/* Herfra er alle tekst-elementer */
-
-#fodnoter {
-    grid-area: fod;
-    margin: 6em 3em -8em 3em;
+#h21 {
+    grid-area: h2;
 }
 
-#bs1 {
-    grid-area: bs1;
-    margin-top: -17em;
+#h22 {
+    grid-area: h22;
 }
 
-#bs2 {
-    grid-area: bs2;
-    margin-bottom: 3em;
+#h23 {
+    grid-area: h23;
 }
 
-
-#ref1 {
-    grid-area: rf1;
+#h24 {
+    grid-area: h24;
 }
+
+#h25 {
+    grid-area: h25;
+}
+
+#h26 {
+    grid-area: h26;
+}
+
+#pro1 {
+    grid-area: p1;
+}
+
+#pro2 {
+    grid-area: p2;
+}
+
+#pro3 {
+    grid-area: p3;
+}
+
+#pro4 {
+    grid-area: p4;
+}
+
+#pro5 {
+    grid-area: p5;
+}
+
+#pro6 {
+    grid-area: p6;
+}
+
+#pro7 {
+    grid-area: p7;
+}
+
+#pro8 {
+    grid-area: p8;
+}
+
+#pro9 {
+    grid-area: p9;
+    margin-bottom: 4em;
+}
+
+#pro10 {
+    grid-area: p10;
+}
+
 /* Her slutter tekst-elementerne */
 /* Her starter billede-elementerne */
 
 #billede1 {
-    margin-top: -24em;
-    text-align: center;
     grid-area: b1;
+    text-align: center;
+}
+
+#billede2 {
+    grid-area: b2;
+    text-align: center;
+}
+
+#billede3 {
+    grid-area: b3;
+    text-align: center;
+}
+
+#billede4 {
+    grid-area: b4;
+    text-align: center;
+}
+
+#billede5 {
+    grid-area: b5;
+    text-align: center;
 }
 
 /* Her slutter billede-elementerne */
 .bil:hover {
-    transition: transform .4s ease;
-    transform: scale(1.6);
+    transition: transform .2s ease;
+    transform: scale(1.4);
     box-shadow: 10px 20px 20px darkgrey;
+}

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>HTML og CSS Workshop</title>
+      <title>Videoproduktion</title>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="workshop.css">
+      <link rel="stylesheet" href="vid.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -84,18 +84,40 @@
     </header>
       <section id="indhold"><!-- Alt det indhold der er midt på siden, såsom tekst, billeder og fodnoter -->
           <!-- Herunder starter alle tekst-elementerne på siden. Alle paragraphs har den samme class, da de deler lidt styling i CSS. -->
-          <h1>Skabelon</h1>
-            
+          <h1>Videoproduktion</h1>
+          <p id="vid1" class="indholdp">Vi havde i grundforløbet en kort introduktion til videpproduktion, og Adobe programmet Premiere Rush
+              <br>
+              <br>
+          Premier Rush er en slags light udgave af Adobes populære videoprogram Premiere Pro. (Softworld, 2019) I Rush er funktionerne skåret ned, så man stadig lige præcis har de funktioner man skal bruge til produktion og redigering af video, uden de mere avancerede funktioner, som kan tage meget lang tid at blive kendt med. (Ibid.)
+              <br>
+              <br>
+          Vi lærte i forløbet også, at det er vigtigt at holde sig til en plan, når man skal producere video. Vi gik således efter at ramme de tre faser, <em>pre-Production, production</em> og <em>post-Production.</em> Ved den første fase, pre-production, havde vi således lavet et storyboard, som vi kunne læne os op af når det kom til production-fasen. (Bogner, 2021. s. 5.)
+          </p>
+          <p id="vid2" class="indholdp">Herefter kom så production-fasen. Til opgaven var vi blevet begrænset til kun at måtte bruge mobil-kamera. Det er en god ide at optage nogle få sekunder i starten og slutningen af sine klip, så man har noget at redigere i, så det stilede vi efter at gøre ved hvert klip. (Ibid.)
+              <br>
+              <br>
+          Sidst men ikke mindst var der post-production. Her redigerede vi videoen, så den passede mest muligt med det vi havde forestillet os på vores storyboard. Vi fandt det musik vi skulle bruge, og klippede det sammen. 
+              <br>
+              <br>
+          Her er det færdige resultat:
+          </p>
+          <section id="video">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/GE1ulicp4jA" width="100%" height="100%"></iframe>
+          </section>
           <!-- Her slutter tekstelementerne -->
           <!-- Her er sectionen til fodnoter, som jeg laver som en organiseret liste. -->
           <section id="fodnoter"> 
             <ol>
-            
+                <li><p>Softworld, <em>Hvad kan Adobe Premier Rush?</em> <a href="https://blog.softworld.dk/hvad-kan-adobe-premiere-rush" target="_blank">https://blog.softworld.dk/hvad-kan-adobe-premiere-rush</a>. 22/2-19.</p></li>
+                <li><p>Bogner, Carsten Kjeldsen, <em>Quick'n Dirty video</em>. Hentet på <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-20" target="_blank">https://eadania.mrooms.net/course/view.php?id=2649#section-20</a>. Hentet 5/1-21. </p></li>
             </ol>
           </section> 
           <!-- Fodnoter slut -->
           <!-- Her starter billederne på siden.-->
-        
+          <section id="billede1">
+            <img class="bil" src="Billeder/vid/storyboard.jpg" alt="billede af et storyboard til en kort video" width="90%">
+              <blockquote>Hold musen over billedet for at forstørre det.</blockquote>
+          </section>
           <!-- Billeder slut -->
       </section>
         <footer><p>&copy; Terkel Blegager 2021</p>&nbsp;<p id="fp2">Erhvervsakademi Dania - MMD 2020</p></footer>

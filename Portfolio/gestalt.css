@@ -67,7 +67,6 @@ h1{
 }
 
 h2{
-    grid-area: h2; 
     font-size: 3em;
     margin: 10em 0 0 2.2em;
 }
@@ -91,17 +90,34 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 
-        0.4fr 1.2fr 1.7fr 0.1fr 1fr 
-        0.5fr 0.1fr 0.1fr 0.4fr;
+        0.3fr 0.4fr 0.4fr 0.4fr 0.3fr
+        0.6fr 0.4fr 0.2fr 1fr 0.4fr
+        0.3fr 0.7fr 0.4fr 0.3fr 1.7fr
+        0.4fr 0.3fr 1.1fr 0.4fr 0.1fr
+        0.4fr 0.1fr
+        ;
     grid-template-areas: 
         "head head head head"
         "h1 h1 h1 h1"
-        "bs1 bs1 bs1 bs1"
-        ". b1 b1 ."
-        "bs2 bs2 bs2 bs2"       /*5*/
+        "g1 g1 g1 g1"
         "h2 h2 h2 h2"
-        "rf1 rf1 rf1 rf1"
-        "fod fod fod fod"       
+        "g2 g2 g2 g2"       /* 5 */
+        ". b1 b1 ."
+        "h22 h22 h22 h22"
+        "g3 g3 g3 g3"
+        ". b2 b2 ."
+        "h23 h23 h23 h23"   /* 10 */
+        "g4 g4 g4 g4"
+        ". b3 b3 ."
+        "h24 h24 h24 h24"
+        "g5 g5 g5 g5"
+        ". b4 b4 ."         /* 15 */
+        "h25 h25 h25 h25"
+        "g6 g6 g6 g6"
+        ". b5 b5 ."
+        "h26 h26 h26 h26"
+        "g7 g7 g7 g7"       /* 20 */
+        "fod fod fod fod"
         "foot foot foot foot"
         ;
 }
@@ -113,31 +129,79 @@ h2{
     margin: 6em 3em -8em 3em;
 }
 
-#bs1 {
-    grid-area: bs1;
-    margin-top: -17em;
+#h21 {
+    grid-area: h2;
 }
 
-#bs2 {
-    grid-area: bs2;
-    margin-bottom: 3em;
+#h22 {
+    grid-area: h22;
+}
+
+#h23 {
+    grid-area: h23;
+}
+
+#h24 {
+    grid-area: h24;
+}
+
+#h25 {
+    grid-area: h25;
+}
+
+#h26 {
+    grid-area: h26;
+}
+
+#ge1 {
+    grid-area: g1;
+}
+
+#ge2 {
+    grid-area: g2;
+}
+
+#ge3 {
+    grid-area: g3;
+}
+
+#ge4 {
+    grid-area: g4;
+}
+
+#ge5 {
+    grid-area: g5;
+}
+
+#ge6 {
+    grid-area: g6;
+}
+
+#ge7 {
+    grid-area: g7;
 }
 
 
-#ref1 {
-    grid-area: rf1;
-}
 /* Her slutter tekst-elementerne */
 /* Her starter billede-elementerne */
 
 #billede1 {
-    margin-top: -24em;
-    text-align: center;
     grid-area: b1;
 }
 
-/* Her slutter billede-elementerne */
-.bil:hover {
-    transition: transform .4s ease;
-    transform: scale(1.6);
-    box-shadow: 10px 20px 20px darkgrey;
+#billede2 {
+    grid-area: b2;
+}
+
+#billede3 {
+    grid-area: b3;
+}
+
+#billede4 {
+    grid-area: b4;
+}
+
+#billede5 {
+    grid-area: b5;
+}
+

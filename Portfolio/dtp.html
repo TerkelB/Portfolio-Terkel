@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Design Thinking Projekt</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="dtp.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="pagewrap"> <!-- Jeg laver altid en pagewrap, lige meget om jeg kommer til at bruge den eller ej. -->
+      <header> <!-- Her starter headeren, som også indeholder min navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <a class="navbar-brand" href="index.html"><p>TERKEL BLEGAGER</p></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Webudvikling</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="html.html">HTML</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="css.html">CSS, Grids og Responsive Design</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Design</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="ps.html">Photoshop</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="il.html">Illustrator</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="vid.html">Videoproduktion</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="typo.html">Typografi</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="farver.html">Farver</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="gestalt.html">Gestaltlovene</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Kommunikation</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="gk.html">Grundlæggende Kommunikation og Paradigmer</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ia.html">Informations Arkitektur</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="tp.html">Tekstproduktion</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="usability.html">Usability Testmetoder</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="bmc.html">Business Model Canvas</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Projekter</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="hackathon.html">Hackathon</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="workshop.html">HTML og CSS Workshop</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="dtp.html">Design Thinking Projekt</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="onepage.html">Onepage</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Om mit Portfolio</a>
+                  </li>
+                </ul>
+              </div>
+        </nav> <!-- Navbar slut -->
+    </header>
+      <section id="indhold"><!-- Alt det indhold der er midt på siden, såsom tekst, billeder og fodnoter -->
+          <!-- Herunder starter alle tekst-elementerne på siden. Alle paragraphs har den samme class, da de deler lidt styling i CSS. -->
+          <h1>Design Thinking Projekt</h1>
+          <p id="dt1" class="indholdp">I denne projektopgave skulle vi øve os i at benytte Design-Thinking processen, når man skal lave et projekt.
+              <br>
+              <br>
+          Opgaven blev stillet således, at vi skulle finde ud af hvordan vi kunne gøre verden bedre ved hjælp af en app, hvor der blev taget udgangspunkt i de 17 verdensmål.
+          </p>
+          <h2 id="h21">Emphathize-fasen</h2>
+          <p id="dt2" class="indholdp">I Empathize fasen startede vi med at sortere i alle 17 verdensmål, da vi synes nogen af dem var lidt for brede, og vi synes også at nogle af dem ville være for svære at udvikle en specifik app til.
+          Vi skrev fordele og ulemper op ved dem alle sammen og fandt derved ud af, at vi gerne ville arbejde med klimaproblemer, og især med fokus på bæredygtighed og ansvarligt forbrug.
+              <br>
+              <br>
+          Derudover skrev vi nogle emner ned, som vi ville tage ud og snakke med nogle tilfældige mennesker om. Vi valgte ikke at skrive direkte spørgsmål ned, da vi hellere ville starte en samtale baseret på emnerne, end at risikere at få nogle lukkede svar, der ikke ville give os inspiration til de næste faser. Vi startede med at spørge nogle tilfældige mennesker der var ude og handle, for at få nogle umotiverede og ægte svar, som helst ikke var påvirket af personens forhold til spørgsmålsstilleren. Emnerne vi ville snakke med folk om var:
+              <br>
+              <br>
+          Folks indkøbsvaner.
+              <br>
+              <br>
+          Folks forhold til ansvarligt forbrug.
+              <br>
+              <br>
+          Folks levestil i forhold til forbrug.
+              <br>
+              <br>
+          Folks forbrugsvaner.
+              <br>
+              <br>
+          Derudover spurgte vi også nogen fra vores egen omgangskreds, da vi ikke fik fat i så mange, der var villige til at stille umotiveret op til ”interview”.
+          </p>
+          <h2 id="h22">Define-fasen</h2>
+          <p id="dt3" class="indholdp">Efter at have set på vores resultater af empathize-fasen, definerede vi problemstillingen:
+              <br>
+              <br>
+          <span id="ps">Folk vil gerne købe mere økologi, men gør det ikke.</span>
+              <br>
+              <br>
+          For at få svar på problemstillingen prøvede vi at få fat i nogle eksperter, eller andre interesseorganisationer. Dette ville vi gøre for at få dem til at fortælle os om folks vaner, dog fik vi ikke fat i nogen efter et par timers forsøg. I stedet måtte vi se på statistikker og lign. fra de organisationer vi forsøgte at få fat i, omkring hvad folk spørger om ift. økologi, indkøbsvaner osv. Til denne fase skulle vi også lave en kort video, der beskrev hvordan vi havde grebet de to første faser an. <a href="https://www.youtube.com/watch?v=asmdQyzU4lY&feature=youtu.be&ab_channel=TerkelBlegager" target="_blank">Den kan ses her</a>.
+              <br>
+          Vi skulle også lave en anden kort video, der beskrev hvad resultatet af de to første faser var. <a href="https://www.youtube.com/watch?v=zv2x6fRVwQs&feature=youtu.be&ab_channel=TerkelBlegager" target="_blank">Den kan ses her</a>.
+          </p>
+          <h2 id="h23">Ideate-fasen</h2>
+          <p id="dt4" class="indholdp">Her startede vi med at brainstorme ideer til vores app.  Disse ideer skrev vi løbende op på post-its, som vi klistrede op på tavlen, således at vi alle kunne se hvad der var skrevet, og derved potentielt inspirere hinanden. Vi satte en tidsbegrænsning på vores brainstorm, og resultatet kan ses på billedet her:</p>
+          <p id="dt5" class="indholdp">Herefter satte vi nogle forskellige ideer sammen, alt efter hvilke ideer der lignede hinanden, og som var oplagte at sætte sammen i en app. Resultatet af dette kan ses her:
+          </p>
+          <p id="dt6" class="indholdp">Det næste vi gjorde var, at vi kom på to forskellige app-typer vi overvejede at lave, og satte de ideer vi ønskede at gå videre med sammen på enten den ene eller den anden ide, for så at vælge hvilken af de to ideer vi ville vælge at gå videre med. Den første ide var, at vi skulle lave en app der ville gøre det nemmere at finde økologiske/miljøvenlige varer, og belønne de brugere af appen, der gjorde det bedst ift. at købe de ”rigtige” varer. Den anden ide var en app, der skulle uddanne brugeren i økologiske/miljøvenlige varer, i vores forbrug af plastisk og andet emballage og vores forbrug af ting som el og vand.
+              <br>
+              <br>
+          Vi endte med at gå videre med den første ide.
+          </p>
+          <h2 id="h24">Prototype/test-fasen</h2>
+          <p id="dt7" class=indholdp>I prototype-fasen lavede vi low-fidelity prototypen på vores app. Dette gjorde vi på papir med en papramme som skulle agere telefon, så vi også kunne visualisere vores prototype. Derefter lavede vi brugertest, og reviderede vores prototype efter det feedback vi fik. Prototypen kan ses her:
+          </p>
+          <p id="dt8" class="indholdp">Her skulle vi lave en video hvori vi skulle gennemgå resultatet, altså vores prototype. Her skulle vi forklare hvordan den virker, og forestille os at vi skulle forklare det til en uden forudgående forståelse for konceptet. <a href="https://www.youtube.com/watch?fbclid=IwAR1TuMKyQNnHJg5BPYvH2iE0ioXezVbR3T4XQjRLqKlAYRRtqr_qFUN0AmI&v=ZBe4s5mYQsU&feature=youtu.be&ab_channel=TerkelBlegager" target="_blank">Den kan ses her</a>.
+          </p>
+          <h2 id="h25">Implementerings-fasen</h2>
+          <p id="dt9" class="indholdp">I Implementerings fasen skulle vi lave en video der beskriver, hvordan vi har grebet processen an i forbindelse med Ideation, Prototyping og Test. <a href="https://www.youtube.com/watch?fbclid=IwAR3Pr2FPTCmNyNHYe8a2dKG1dG7VbVhDAs6j5eahUW-gW6pdZHInzmbuHZk&v=HORynjzl_50&feature=youtu.be&ab_channel=TerkelBlegager" target="_blank">Den kan ses her</a>.
+              <br>
+              <br>
+          Vi skulle også lave en video som skulle fungere som en kort pitch til, hvorfor vores produkt er relevant at videreudvikle. <a href="https://www.youtube.com/watch?fbclid=IwAR3OghTI8tD29T9TvcfnkvxwdivSnAzgOI8xnuHb2Eqy3lFp0A0-iGZsKm0&v=CNy363quMIU&feature=youtu.be&ab_channel=TerkelBlegager" target="_blank">Den kan ses her</a>.
+          </p>
+          <h2 id="h26">Reflektion</h2>
+          <p id="dt10" class=indholdp>Det var en god øvelse i at bruge Design-Thinking i et projekt. I dette projekt blev det især fremhævet hvor vigtigt det er, at få umotiverede svar fra så mange personer som muligt, når man er i gang med produktionen af en app f.eks.
+          </p>
+          <!-- Her slutter tekstelementerne -->
+          <!-- Her er sectionen til fodnoter, som jeg laver som en organiseret liste. -->
+         <!-- <section id="fodnoter"> 
+            <ol>
+            
+            </ol>
+          </section> -->
+          <!-- Fodnoter slut -->
+          <!-- Her starter billederne på siden.-->
+          <section id="billede1">
+            <img class="bil" src="Billeder/designthinking/bs1.webp" alt="en brainstorm fra design thinking projektet" width="80%">
+            <blockquote>Hold musen over billedet for at forstørre det.</blockquote>
+          </section>
+          <section id="billede2">
+            <img class="bil" src="Billeder/designthinking/bs2.webp" alt="resultatet af at have organiseret vores brainstorm" width="80%">
+            <blockquote>Hold musen over billedet for at forstørre det.</blockquote>
+          </section>
+          <section id="billede3">
+            <img class="bil" src="Billeder/designthinking/proto.webp" alt="Prototypen på vores app" width="80%">
+            <blockquote>Hold musen over billedet for at forstørre det.</blockquote>
+          </section>
+          <!-- Billeder slut -->
+      </section>
+        <footer><p>&copy; Terkel Blegager 2021</p>&nbsp;<p id="fp2">Erhvervsakademi Dania - MMD 2020</p></footer>
+    </div> <!--Pagewrap slut-->
+  </body>

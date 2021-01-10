@@ -60,16 +60,16 @@ footer p {
 }
 
 h1{
+    text-align: center;
     color: black;
     grid-area: h1;
     font-size: 3em;
-    margin-left: 1.8em;
+    margin-top: 1em;
 }
 
 h2{
     grid-area: h2; 
     font-size: 3em;
-    margin: 10em 0 0 2.2em;
 }
 
 .indholdp {
@@ -80,6 +80,7 @@ h2{
 
 /* Her er griddet for siden */
 #indhold {
+    text-align: center;
     min-width: 510px;
     max-width: 1100px;
     margin: auto;
@@ -91,22 +92,62 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 
-        1fr 1fr 1fr 1fr
-        ;
+        0.01fr 2fr 0.2fr 0.5fr 0.1fr
+        0.2fr 0.4fr 0.4fr 0.4fr 0.5fr
+        0.4fr 0.1fr 0.2fr;
     grid-template-areas: 
         "head head head head"
+        "b1 b1 b1 b1"
+        ". . . ."
         "h1 h1 h1 h1"
-        "fod fod fod fod"
+        "f1 f1 f1 f1"           /* 5 */
+        "h2 h2 h2 h2"
+        "h31 h31 h31 h31"
+        "f2 f2 f2 f2"
+        "h32 h32 h32 h32"
+        "f3 f3 f3 f3"           /* 10 */
+        "h33 h33 h33 h33"
+        "f4 f4 f4 f4"
         "foot foot foot foot"
         ;
 }
 
 /* Herfra er alle tekst-elementer */
 
-#fodnoter {
-    grid-area: fod;
-    margin: 6em 3em -8em 3em;
+#h31 {
+    grid-area: h31;
+}
+
+#h32 {
+    grid-area: h32;
+}
+
+#h33 {
+    grid-area: h33;
+}
+
+#for1 {
+    grid-area: f1;
+}
+
+#for2 {
+    grid-area: f2;
+}
+
+#for3 {
+    grid-area: f3;
+}
+
+#for4 {
+    grid-area: f4;
 }
 
 /* Her slutter tekst-elementerne */
 /* Her starter billede-elementerne */
+
+#billede1 {
+    width: 100%;
+    grid-area: b1;
+}
+
+/* Her slutter billede-elementerne */
